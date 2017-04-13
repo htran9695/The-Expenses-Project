@@ -1,0 +1,11 @@
+<%= search_form_for @q do |f| %>
+
+  <%= f.label :location %>
+  <%= f.search_field :location %>
+
+  <%= f.label :date %>
+  <%= f.search_field :date %>
+
+
+  <%= f.submit %>
+<% end %>

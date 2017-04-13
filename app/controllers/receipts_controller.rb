@@ -4,7 +4,6 @@ class ReceiptsController < ApplicationController
   # GET /receipts
   # GET /receipts.json
   def index
-    @receipts = Receipt.all
     @q = Receipt.ransack(params[:q])
     @receipts = @q.result(distinct: true)
   end
